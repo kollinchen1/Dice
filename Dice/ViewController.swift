@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        rollDiceImages()
+        changeDiceImages()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -40,14 +40,14 @@ class ViewController: UIViewController {
 
     @IBAction func pressedRoll(_ sender: UIButton) {
         
-        rollDiceImages()
+        changeDiceImages()
 
     }
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?){ // motion detecting
-        rollDiceImages()
+        changeDiceImages()
     }
     
-    func rollDiceImages(){
+    func changeDiceImages(){
         randomDiceIndex1 = Int(arc4random_uniform(6))
         randomDiceIndex2 = Int(arc4random_uniform(6))
         randomDiceIndex3 = Int(arc4random_uniform(6))
