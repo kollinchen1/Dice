@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         rollDiceImages()
 
     }
-    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?){
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?){ // motion detecting
         rollDiceImages()
     }
     
